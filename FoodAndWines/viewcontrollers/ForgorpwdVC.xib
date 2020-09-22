@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForgorpwdVC" customModule="cambridgewines" customModuleProvider="target">
+            <connections>
+                <outlet property="txtemail" destination="2wb-Au-J69" id="uPu-J7-4IY"/>
+                <outlet property="view" destination="9xJ-LT-gQM" id="oMd-nP-kOt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="9xJ-LT-gQM">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="aZK-NO-hhT">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="IzT-c7-rQF">
+                    <rect key="frame" x="20" y="140" width="280" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="03D-6x-Nn6"/>
+                        <constraint firstAttribute="width" constant="280" id="J5V-gV-4zB"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wb-Au-J69" customClass="DesignableUITextField" customModule="cambridgewines" customModuleProvider="target">
+                    <rect key="frame" x="20" y="342" width="280" height="50"/>
+                    <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MpV-dq-LJr"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="ic_user_password"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="leadingImage" value="ic_user_username"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kab-LY-xuC" customClass="RoundButton" customModule="cambridgewines" customModuleProvider="target">
+                    <rect key="frame" x="20" y="408" width="280" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Vwj-i7-SIa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="SUBMIT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="customBGColor">
+                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnsubmitclick:" destination="-1" eventType="touchUpInside" id="pUR-Gc-6sw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Kab-LY-xuC" firstAttribute="leading" secondItem="GeX-ff-O6H" secondAttribute="leading" constant="20" id="8jE-KA-znb"/>
+                <constraint firstItem="IzT-c7-rQF" firstAttribute="centerX" secondItem="9xJ-LT-gQM" secondAttribute="centerX" id="8jd-U4-4uZ"/>
+                <constraint firstItem="GeX-ff-O6H" firstAttribute="trailing" secondItem="Kab-LY-xuC" secondAttribute="trailing" constant="20" id="U5g-E9-GLU"/>
+                <constraint firstItem="aZK-NO-hhT" firstAttribute="bottom" secondItem="GeX-ff-O6H" secondAttribute="bottom" id="YF0-gr-IDF"/>
+                <constraint firstItem="2wb-Au-J69" firstAttribute="leading" secondItem="GeX-ff-O6H" secondAttribute="leading" constant="20" id="YN2-4v-vuZ"/>
+                <constraint firstItem="IzT-c7-rQF" firstAttribute="top" secondItem="GeX-ff-O6H" secondAttribute="top" constant="120" id="aOb-iE-GOk"/>
+                <constraint firstItem="GeX-ff-O6H" firstAttribute="trailing" secondItem="2wb-Au-J69" secondAttribute="trailing" constant="20" id="ayL-z7-mJM"/>
+                <constraint firstItem="aZK-NO-hhT" firstAttribute="leading" secondItem="GeX-ff-O6H" secondAttribute="leading" id="f4S-sy-aan"/>
+                <constraint firstItem="GeX-ff-O6H" firstAttribute="bottom" secondItem="Kab-LY-xuC" secondAttribute="bottom" constant="110" id="lmv-sM-jnR"/>
+                <constraint firstItem="Kab-LY-xuC" firstAttribute="top" secondItem="2wb-Au-J69" secondAttribute="bottom" constant="16" id="ngw-28-iDg"/>
+                <constraint firstItem="aZK-NO-hhT" firstAttribute="top" secondItem="9xJ-LT-gQM" secondAttribute="top" id="qzO-Fb-Jpp"/>
+                <constraint firstItem="aZK-NO-hhT" firstAttribute="trailing" secondItem="GeX-ff-O6H" secondAttribute="trailing" id="rfn-E1-v8K"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="GeX-ff-O6H"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background" width="375" height="667"/>
+        <image name="ic_user_password" width="18" height="18"/>
+        <image name="ic_user_username" width="18" height="18"/>
+        <image name="logo" width="318" height="117"/>
+    </resources>
+</document>
